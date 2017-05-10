@@ -1,0 +1,42 @@
+header {
+  text-align: center;
+  background: #d4d2d2;
+}
+
+nav {
+  text-align: center;
+  padding-bottom: 50px;
+  font-size: 30px;
+  font-style: italic;
+}
+
+h1 {
+  font-family: cursive;
+  font-size: 70px;
+  color: #984d4d;
+}
+
+img {
+  height: 300px;
+  width: 320px;
+  border-radius: 100%;
+  border: 3px solid #7a7777;
+  position: relative;
+  left: 380px;
+  padding: 5px;
+}
+
+p {
+  font-size: 26px;
+  color: gray;
+  text-align: center;
+}
+
+footer img {
+  height: 50px;
+  width: 50px;
+  padding: 0px;
+  border: none;
+  position: relative;
+  left: 600px;
+}
