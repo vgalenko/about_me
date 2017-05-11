@@ -7,22 +7,18 @@ console.log('user: ' + user);
 var userAnswer = prompt('Do you want to continue playing?').toLowerCase();
 console.log('userAnswer: ' + userAnswer);
 
-if (userAnswer === 'yes') {
+if (userAnswer === 'yes' || userAnswer === 'y') {
     alert('Nice! Lets keep going!')
-}
-
-else {
-    alert('Well... we gotta keep going anyway because this is my assignment')
+} else {
+    alert('Well... we gotta keep going anyway because this is my assignment');
 }
 
 var myAge = prompt('Guess what my age is ' + user);
 console.log('age: ' + myAge);
 
 if (myAge === '28') {
-  alert('NO WAY! How did you know?')
-}
-
-else {
+  alert('NO WAY! How did you know?');
+} else {
   alert ('you\'re close but not quite there yet, I am actually 28');
 }
 
@@ -31,9 +27,7 @@ console.log('food: ' + myFood);
 
 if ('pizza' || 'burger' || 'ice cream' || 'sandwiches') {
   alert('How did you know I like ' + myFood + ' ?');
-}
-
-else {
+} else {
   alert('try again!');
 }
 
@@ -42,14 +36,13 @@ console.log('userAnswerTwo: ' + userAnswerTwo);
 
 if (userAnswerTwo === 'yes') {
   alert('You\'re awesome! But we are done! Now lets look at my about me page');
-}
-else {
+} else {
   alert('Ohh man I was having fun, ok bye!');
 }
 
 
 var faveNumber = 5;
-
+// this loop will loop 4 times and give the user 4 tries to get the correct answer
 for (var i=0; i < 4; i++) {
   var answer = prompt('guess my favorite number from 1 to 10');
   console.log('number:' + answer);
@@ -59,12 +52,12 @@ for (var i=0; i < 4; i++) {
     alert('too high, try again');
   } else {
     alert('you got it!');
-    break;
+    break; // once the user gets it right this break will stop the loop.
   }
 }
 
 var states = ['washington', 'oregon', 'new york'];
-var userGuess = 0;
+var userGuess = 0; // user will start off with 0
 
 while(userGuess < 6){
   var answer7 = prompt('what states have i lived in?').toLowerCase();
@@ -72,7 +65,7 @@ while(userGuess < 6){
     console.log(states);
     if (states[i] === answer7) {
       alert('you got it right!');
-      userGuess = 6;
+      userGuess = 6; // user will have 6 tries to guess.
       break;
     }
   }
